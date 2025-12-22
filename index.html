@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -8,34 +9,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Estrelas do amanhã</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="styles/index.css">
 </head>
+
 <body>
   <div id="app">
     <main>
       <div class="main-container">
-       <div class="back">
-        <img src="assets/icons/arrow-left-02.svg" alt="Voltar">
-        <span>Voltar</span>
-       </div>
+        <div class="back">
+          <img src="assets/icons/arrow-left-02.svg" alt="Voltar">
+          <span>Voltar</span>
+        </div>
 
-       <h1>Formulário de Matrícula</h1>
-       <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+        <h1>Formulário de Matrícula</h1>
+        <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+
+        <form method="post" enctype="multipart/form-data">
+          <fieldset class="child-info">
+            <legend>Informações da criança</legend>
+
+            <div class="input-wrapper">
+              <label for="fullname">Nome completo</label>
+              <input id="fullname" name="fullname" type="text" placeholder="Nome completo da criança">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="birth">Data de nascimento</label>
+              <input type="date" name="birth" id="birth" lang="pt-br">
+            </div>
+
+            <div class="select-wrapper">
+              <label for="gender">Sexo</label>
+              <select name="gender" id="gender">
+                <option value="female">Feminino</option>
+                <option value="male">Masculino</option>
+                <option value="na">Prefiro não responder</option>
+              </select>
+            </div>
+
+            <div class="textarea-wrapper">
+              <label for="medical-info">Informações médicas</label>
+              <textarea name="medical-info" id="medical-info"
+              cols="30" rows="10"
+              placeholder="A criança possui alguma condição médica que a escola deve estar ciente? (Se sim, especifique)"
+              ></textarea>
+            </div>
+
+            <div class="droparea-wrapper">
+              <input type="file" id="birth-file" name="birth-file"> <!-- assim que define que vai ter um arquivo tem que definir no form = method="post" enctype="multipart/form-data-->
+              <img src="assets/icons/cloud-upload.svg" alt="">
+              <p>
+                Clique aqui <br> 
+                para selecionar os arquivos
+              </p>
+            </div>
+          </fieldset>
+        </form>
       </div>
     </main>
 
     <aside>
       <div class="aside-container">
         <header>
-          <img src="assets/logo.svg" alt="Logo estralas do amanhã"> 
-          <h2> Porque cada momento de 
+          <img src="assets/logo.svg" alt="Logo estralas do amanhã">
+          <h2> Porque cada momento de
             <span>
               aprendizado
             </span>
-            conta 
-          </h2> 
+            conta
+          </h2>
           <p>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.
           </p>
         </header>
@@ -45,4 +90,5 @@
     </aside>
   </div>
 </body>
+
 </html>
