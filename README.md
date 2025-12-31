@@ -1,7 +1,6 @@
-### 📔 Projeto Formulário de Matrícula
+## 📔 Projeto Formulário de Matrícula
 
-## Sistema unitário de um formulário onde o usuário (responsável) cadastra o menor de idade para o projeto Estrelas do amanhã, com o objetivo de
-desenvolver crianças e adolescentes
+### ✔ Sistema unitário de um formulário onde o usuário (responsável) cadastra o menor de idade para o projeto Estrelas do amanhã, com o objetivo dedesenvolver crianças e adolescentes.
 
 <table>
   <tr>
@@ -14,4 +13,9 @@ desenvolver crianças e adolescentes
   </tr>
 </table>
 
+## 💻 Tecnologias usadas:
 
+- CSS
+- HTML
+- GitHub
+- README
